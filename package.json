@@ -1,0 +1,19 @@
+{
+  "name": "easybank",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:styles": "stylelint --cache --cache-strategy metadata --fix --quiet \"src/**/*.scss\""
+  },
+  "devDependencies": {
+    "sass": "^1.67.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}

@@ -1,0 +1,104 @@
+.header {
+  &-toggler {
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $dark-blue;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &.open {
+    .header-toggler {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    background-image: linear-gradient($dark-blue, transparent);
+    inset: 3.75rem 0 0;
+  }
+
+  nav {
+    padding: 1.06rem 1.5rem;
+    position: relative;
+    background-color: $white;
+  }
+
+  &-logo {
+    img {
+      width: 8.81rem;
+      height: 1.37rem;
+    }
+  }
+
+  &-menu {
+    background: $white;
+    padding: 1.62rem;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    width: calc(100% - 3rem);
+    transform: translateX(-50%);
+    margin-top: 1.5rem;
+
+    a {
+      color: $dark-blue;
+      padding: 0.62rem;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &-links {
+    a {
+      position: relative;
+      font-size: $font-sm;
+      color: $grayish-blue;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: linear-gradient(to right, $lime-green, $bright-cyan);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      &:hover {
+        color: $dark-blue;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
