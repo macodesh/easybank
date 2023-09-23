@@ -4,6 +4,17 @@
 
 O EasyBank é uma landing page que representa um banco moderno, sintonizado com as últimas tendências tecnológicas e de design. Esta página é um exemplo de como uma instituição financeira pode apresentar seus serviços de forma atraente e inovadora aos clientes.
 
+## Screenshots
+
+### Desktop
+
+![Desktop](/screenshots/desktop.png)
+
+### Mobile
+
+![Mobile 1](/screenshots/mobile1.png)
+![Mobile 2](/screenshots/mobile2.png)
+
 ## Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
