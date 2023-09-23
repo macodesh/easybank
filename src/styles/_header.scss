@@ -1,4 +1,7 @@
 .header {
+  position: relative;
+  z-index: 1;
+
   &-toggler {
     > span {
       display: block;
@@ -86,7 +89,7 @@
         height: 5px;
         left: 0;
         right: 0;
-        bottom: -30px;
+        bottom: -32px;
         background: linear-gradient(to right, $lime-green, $bright-cyan);
         opacity: 0;
         transition: opacity 300ms ease-in-out;

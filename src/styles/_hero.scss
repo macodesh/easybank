@@ -62,6 +62,10 @@
         background-size: 122%;
         background-position: 0% 76%;
       }
+
+      @include breakpoint-up(extra-large) {
+        background-position: -14% 76%;
+      }
     }
   }
 
